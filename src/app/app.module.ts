@@ -13,7 +13,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 
 import { AppRoutingModule } from './app-routing.module';
 
-import { RestritoRoutingModule } from './restrito/restrito-routing.module';
+import { RestritoRoutingModule } from './restrito/restrito-routing.module'; //adicionado 6:02 video 3
 
 import { AppComponent } from './app.component';
 import { InicioComponent } from './inicio/inicio.component';
@@ -26,6 +26,8 @@ import { CadastroProdutoComponent } from './restrito/cadastro-produto/cadastro-p
 import { ListaProdutoComponent } from './restrito/lista-produto/lista-produto.component';
 import { MenuProdutoComponent } from './restrito/menu-produto/menu-produto.component';
 import { MenuRestritoComponent } from './restrito/menu-restrito/menu-restrito.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -52,7 +54,13 @@ import { MenuRestritoComponent } from './restrito/menu-restrito/menu-restrito.co
     MatIconModule,
     MatInputModule,
     MatMenuModule,
-    MatToolbarModule
+    MatToolbarModule,
+    HttpClientModule,
+    FormsModule, //formulario do cadastro
+    ReactiveFormsModule, 
+    HttpClientModule, // responsáver por fazer a API funcionar
+    RestritoRoutingModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

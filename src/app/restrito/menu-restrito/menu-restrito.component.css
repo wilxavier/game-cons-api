@@ -1,3 +1,16 @@
+.example-spacer {
+    flex: 2 2 auto;
+}
+
+span {
+    padding: 20px 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
 img {
     height: 50px;
     width: 50px;
