@@ -5,11 +5,11 @@ import { ListaProdutoComponent } from './lista-produto/lista-produto.component';
 import { AtualizaProdutoComponent } from './atualiza-produto/atualiza-produto.component';
 import { RestritoComponent } from './restrito.component';
 
-const routes: Routes = [
+
+const restritoRoutes: Routes = [
     {
         path: 'restrito', component: RestritoComponent, children: [
-
-            { path: 'cadastro', component: CadastroProdutoComponent },
+            { path: 'cadastro', component: CadastroProdutoComponent},
             { path: 'lista', component: ListaProdutoComponent },
             { path: 'editar/:id', component: AtualizaProdutoComponent },
         ]
@@ -19,8 +19,10 @@ const routes: Routes = [
 ]
 
 @NgModule({
-    imports:[RouterModule.forChild(RestritoRoutes)],
+    imports: [RouterModule.forChild(restritoRoutes)],
     exports: [RouterModule]
 })
-export class RestritoRoutingModule {
-}
+export class RestritoRoutingModule{}
+
+
+
